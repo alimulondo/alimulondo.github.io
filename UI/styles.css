@@ -14,6 +14,13 @@ header{
 	padding-top: 0px;
 }
 
+select{
+	padding: 4px;
+	border-radius: 5px;
+	font-size: 1.5rem;
+	height: 1rem;
+}
+
 #nav-styles{ 
 
 	/*height: 100%;*/
@@ -251,6 +258,28 @@ ul a li{
 	 animation: _move-signup 40s 1 ease-in-out;
 }
 
+#login-div{
+
+
+	 position: absolute;
+	 width: auto;
+	 height: auto;
+	 border-radius: 20px;
+	 background-color: #72758C;
+	 /*margin-top: 10%;*/
+	 margin-left: 30%;
+
+	 /*fallback and real potion os this div*/
+        margin-top:20rem;
+		transform: rotateZ(-2deg);
+
+
+	 /*give the signup downward motion*/
+	 animation: _move-login 10s 1 ease-in-out;
+
+
+}
+
 #signup-pic{
 	width: 150px;
 	height: 150px;
@@ -332,6 +361,29 @@ ul a li{
 
      }
 }
+@keyframes _move-login{
+     from{
+        margin-top: calc(10% - 20rem);
+     }
+     30%{
+        margin-top: calc(17% - 20rem);
+            
+     }
+     30%{
+        margin-top: calc(20% - 20rem);
+            
+     }
+     30%{
+        margin-top: calc(25% - 20rem);
+            
+     }
+     to{
+        /*margin-top:calc(30%-50px);*/
+        margin-top:20rem;
+        transform: rotateZ(-2deg);
+
+     }
+}
 
 #rotating-chapati{
 	position: absolute;
@@ -408,5 +460,18 @@ ul a li{
 
    }
 
+}
+
+#login-to-signup{
+     text-decoration: none;;
+     color: blue;
+     font-size: 1rem;
+
+
+}
+
+#login-to-signup:hover{
+	color: red;
+	text-decoration: underline;
 }
 

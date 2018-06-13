@@ -3,6 +3,7 @@ html body{
 	background-image: url(images/header-3.jpg);
 	background-size: cover;
 	font-family: Arial, sans-serif;
+	box-sizing: border-box;
 	/*background-position:center;*/
 	background-repeat: no-repeat;
 }
@@ -102,6 +103,12 @@ ul a li{
 	border-radius: 3px;
 	text-align: right;
 }
+#big{
+	position: relative;
+	margin-left: 0px;
+	margin-top: 0px;
+	width: 100%;
+}
 
 #main-heading{
 	position: relative;
@@ -162,14 +169,16 @@ ul a li{
 /*tilliting a letter to my clints..*/
 
 #letter-to-clients{
-   background-color: white;
-  color: black;
+
+	position: absolute;
+    background-color: white;
+    color: black;
   /*border: 8px  solid gray;*/
-  box-shadow: 5px 5px 5px 5px black;
-  border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px black;
+  /*border-radius: 5px;*/
   /*this property is not working...*/
-  padding:10px;
-  margin: 10px;
+    padding:10px;
+  /*margin: 10px;*/
 
   background-image: linear-gradient(90deg, #b6d7e8 2px, 
                                       transparent 2px, 
@@ -184,7 +193,7 @@ ul a li{
    width: 600px;
    height:auto;
    position: relative;
-   margin-top: -5rem;
+   margin-top: calc(-5rem + 15px);
    /*margin-bottom:20%;*/
    margin-left: 30%;
    /*margin-right: 20%;*/
@@ -200,10 +209,7 @@ ul a li{
     transform-style: preserve-3d;
 
     /*the movement is done here...*/
-    animation-name: moving;
-    animation-duration: 50s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in-out;
+    /**/
 
     /*give it the floating ability*/
     /*animation: flaating 40s infinite ease-in-out;*/
@@ -475,3 +481,231 @@ ul a li{
 	text-decoration: underline;
 }
 
+/*from here is css for the riders page*/
+#custom-body{
+	background-image: none;
+	box-sizing: border-box;
+	background-color: #EBFFD1FF;
+}
+
+
+#rider-menu{
+	position: absolute;
+	height: 4rem;
+	width: calc(100% - 1rem);
+	margin-left: 0%;
+	margin-top: 0%;
+	background-color: #E2DEA8FF;
+
+}
+
+#rider-welcom-msg{
+	position: absolute;
+	margin-left: calc(50% - 10rem);
+	margin-top: calc(1rem);
+	width: 20rem;
+	height: 2rem;
+	border-radius: 0.5rem;
+	background-color: #F3F3D9FF;
+
+}
+
+#rider-welcom-msg p{
+	position: absolute;
+	margin-left: calc(5rem - 20px);
+	margin-top: calc(-1rem + 20px);
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+#rider-status{
+	position: absolute;
+	margin-top: calc(1rem);
+	margin-left: 2rem;
+	width: 8rem;
+	height: 2rem;
+	border-radius: 0.5rem;
+	background-color: #238ACBFF;
+
+}
+#rider-status p{
+	margin-left: calc(4rem - 40px);
+	margin-top: calc(1rem - 10px);
+	font-size: 1.2rem;
+}
+
+#rider-submenu{
+	position: absolute;
+	margin-top: calc(1rem - 10px);
+	margin-left: calc(100% - 8rem);
+	width: 6rem;
+	height: 4rem;
+	background-color: transparent;
+	background-size: cover;
+	background-position: center;background-image: url(images/rider-menu.png);
+}
+
+#rider-submenu:hover{
+	cursor: pointer;
+}
+
+/*this style is to help popup the submenu when implemented*/
+#rider-submenu:active{
+	background-color: orange;
+}
+
+#view-drivers{
+	position: absolute;
+	margin-top: 4rem;
+	height: 100%;
+	width: 20rem;
+	background-color: #E2F3AEE7;
+
+}
+#rider-text-area{
+	position: absolute;
+	margin-top: calc(50% - 5.5rem);
+	margin-left: 0;
+	width: calc(100% - 1rem);
+	height: 10rem;
+	background-color: #C5B7A4C6;
+}
+
+#rider-message-view{
+	position: absolute;
+	/*widows: inherit;*/
+	margin-left: 20rem;
+	margin-top: 4rem;
+	width: calc(100% - 21rem);
+	height: 33rem;
+	background-color: #FFFFEFDB;
+}
+
+/*working on the text-area div*/
+#rider-typing-place{
+	position: absolute;
+	margin-left: calc(26rem);
+	margin-top: 2rem;
+	width: 20rem;
+	height: 6rem;
+	border-radius: 10px;
+	background-color: white;
+	border-radius: 10px;
+
+}
+
+#rider-typing-place textarea{
+	width: 100%;
+	height: 100%;
+	font-size: 1rem;
+	border-radius: 10px;
+}
+
+#rider-typing-place textarea:active{
+	border: 5px solid #E0E9F3FF;
+	border-radius:10x; 
+
+}
+
+#rider-place-from{
+	position: absolute;
+	margin-top: 2rem;
+	margin-left: 3rem;
+	width: 20rem;
+	height: 6rem;
+	background-color: #FEFEA38C;
+	border-radius: 10px;
+
+
+}
+
+#rider-place-to{
+	position: absolute;
+	margin-top: 2rem;
+	margin-left: calc(49rem);
+	width: 20rem;
+	height: 6rem;
+	background-color: #FEFEA38C;
+	border-radius: 10px;
+
+
+}
+
+.organize-place{
+	position: absolute;
+	margin-top: calc(3rem - 14px);
+	margin-left: calc(2rem - 15px);
+
+}
+
+.organize-place label{
+	padding: 2px;
+	font-weight: bold;
+}
+
+.organize-place  input[type=text]{
+	  padding: 2px;
+	  height: 1.5rem;
+	  border: 8px solid transparent;
+	  border-radius: 8px;
+}
+
+#rider-content-sub{
+	position: relative;
+	margin-left: 72rem;
+	margin-top: 2rem;
+	width: 6rem;
+	height: 6rem;
+	border-radius: 50%;
+	background-color: #23FF3C91;
+	transform: rotateZ(30deg);
+}
+
+#center-submit{
+	position: absolute;
+	display: inline;
+	margin-top: calc(3rem - 20px);
+	margin-left: calc(3rem - 5px);
+}
+#flip-submit{
+	position: absolute;
+	display: inline;
+	margin-top: calc(4rem - 20px);
+	margin-left: calc(1rem - 25px);
+	transform: rotateZ(-90deg);
+}
+
+#rider-content-sub:hover{
+	background-color: #E2E969FF;
+	cursor: pointer;
+	animation: _rotate-rider-btn 40s infinite ease-in-out; 
+}
+
+@keyframes _rotate-rider-btn{
+ from{ 	transform: rotateZ(50deg);
+ }
+ 25%{	
+ 	transform: rotateZ(90deg);
+   }
+ 25%{
+ 	  	transform: rotateZ(180deg);
+
+ }
+ 25%{
+ 	  	transform: rotateZ(230deg);
+
+ }
+ 25%{
+ 	  	transform: rotateZ(280deg);
+
+ }
+ 25%{
+ 	  	transform: rotateZ(320deg);
+
+ }
+ to{
+ 	  	transform: rotateZ(30deg);
+
+ }
+
+}
